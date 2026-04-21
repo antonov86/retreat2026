@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Longevity Blueprint Mountain Retreat — June 14–20, 2026 · Lago Maggiore, Italy</title>
+<meta name="description" content="A 6-day immersive longevity retreat in the Italian mountains. Five lectures, three homemade meals a day, and a personal protocol you take home. June 14–20, 2026. From €389.">
+<style>
+  :root {
+    --green: #1f3a2e;
+    --green-light: #2a4d3a;
+    --cream: #faf6ef;
+    --cream-dark: #f0e9d9;
+    --terra: #c47a4a;
+    --terra-hover: #b36a3a;
+    --text: #1c1f1d;
+    --muted: #6f7a72;
+    --border: #d9d2c4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 600; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.08; }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2.4rem); line-height: 1.15; margin-bottom: 1rem; }
+  p { max-width: 660px; }
+  .eyebrow {
+    font-family: -apple-system, sans-serif;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 80px 0; }
+  @media (max-width: 768px) { section { padding: 56px 0; } }
+
+  /* === CTA BUTTON (single style, repeated) === */
+  .cta {
+    display: inline-block;
+    padding: 18px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    background: var(--terra);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+  }
+  .cta:hover { background: var(--terra-hover); }
+  .cta-note {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  /* === STICKY NAV === */
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(31,58,46,0.95);
+    backdrop-filter: blur(8px);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  .topbar.visible { transform: translateY(0); }
+  .topbar .brand { font-family: Georgia, serif; font-size: 0.95rem; color: #fff; font-weight: 600; text-decoration: none; }
+  .topbar .spots { font-size: 0.78rem; color: var(--terra); margin-right: auto; margin-left: 16px; font-weight: 500; letter-spacing: 0.02em; }
+  .topbar .cta { padding: 10px 22px; font-size: 0.82rem; }
+
+  /* === HERO — Full-screen background image with overlay === */
+  .hero {
+    position: relative;
+    min-height: calc(100vh - 44px);
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: url('img/montino/hero.jpeg') center/cover no-repeat;
+  }
+  .hero-bg::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(31,58,46,0.92) 0%, rgba(31,58,46,0.45) 50%, rgba(31,58,46,0.15) 100%);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 120px 24px 64px;
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .hero-content .eyebrow { color: var(--terra); }
+  .hero-content h1 { color: #fff; max-width: 700px; margin-bottom: 1rem; }
+  .hero-content .sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #f0e9df;
+    max-width: 560px;
+    margin-bottom: 1.5rem;
+    line-height: 1.55;
+  }
+  .hero-bullets {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .hero-bullets li {
+    font-size: 1rem;
+    padding: 7px 0 7px 24px;
+    position: relative;
+    color: #e0d8ca;
+  }
+  .hero-bullets li::before {
+    content: '';
+    position: absolute; left: 0; top: 15px;
+    width: 12px; height: 2px;
+    background: var(--terra);
+  }
+  .hero-bullets strong { color: #fff; }
+  .hero-content .cta-note { color: #a8b4ac; }
+  .hero-meta {
+    margin-top: 1.5rem;
+    font-size: 0.82rem;
+    color: #a8b4ac;
+    letter-spacing: 0.02em;
+  }
+  @media (max-width: 768px) {
+    .hero-content { padding: 80px 24px 40px; }
+  }
+
+  /* === OBJECTION SECTION BASE === */
+  .obj { background: var(--cream); }
+  .obj-dark { background: var(--green); color: var(--cream); }
+  .obj-dark .eyebrow { color: var(--terra); }
+  .obj-dark h2 { color: #fff; }
+  .obj-dark p { color: #c4cfc8; }
+  .obj-alt { background: var(--cream-dark); }
+  .section-cta { margin-top: 2.5rem; }
+
+  /* === CASCADE === */
+  .cascade-chain {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    margin: 2rem 0;
+  }
+  .cascade-chain .step {
+    background: rgba(196,122,74,0.12);
+    border: 1px solid rgba(196,122,74,0.25);
+    color: var(--terra);
+    padding: 7px 16px; border-radius: 4px;
+    font-size: 0.88rem; font-weight: 600; letter-spacing: 0.03em;
+  }
+  .obj-dark .cascade-chain .step { color: #d4956a; background: rgba(196,122,74,0.15); border-color: rgba(196,122,74,0.3); }
+  .cascade-chain .arrow { color: var(--terra); font-size: 1.1rem; }
+
+  /* === TWO-COL GRID === */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .two-col img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .two-col p { margin-bottom: 1rem; font-size: 1.02rem; }
+  @media (max-width: 768px) {
+    .two-col { grid-template-columns: 1fr; }
+    .two-col img { height: 260px; }
+  }
+
+  /* === PILLARS === */
+  .pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 2rem;
+  }
+  .pillar-card {
+    background: #fff; border: 1px solid var(--border);
+    padding: 24px 20px; border-radius: 6px;
+  }
+  .pillar-num { font-family: Georgia, serif; font-size: 1.8rem; color: var(--terra); line-height: 1; margin-bottom: 6px; }
+  .pillar-name { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; color: var(--green); margin-bottom: 8px; }
+  .pillar-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.5; }
+  @media (max-width: 900px) { .pillars-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .pillars-grid { grid-template-columns: 1fr; } }
+
+  /* === PHOTO STRIP === */
+  .photos { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; }
+  .photos img { width: 100%; height: 300px; object-fit: cover; }
+  @media (max-width: 768px) { .photos { grid-template-columns: 1fr; } .photos img { height: 220px; } }
+
+  /* === SCHEDULE === */
+  .sched-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 2rem; }
+  .sched-row { display: grid; grid-template-columns: 56px 1fr; gap: 0 14px; padding: 11px 0; border-bottom: 1px solid var(--border); }
+  .sched-t { font-weight: 600; color: var(--terra); font-variant-numeric: tabular-nums; font-size: 0.92rem; }
+  .sched-d { font-size: 0.92rem; }
+  .sched-note { font-style: italic; color: var(--muted); font-size: 0.88rem; margin-top: 1.2rem; }
+  @media (max-width: 768px) { .sched-grid { grid-template-columns: 1fr; } }
+
+  /* === ARC TABLE === */
+  .arc-table { width: 100%; margin-top: 1.5rem; border-collapse: collapse; }
+  .arc-table th { text-align: left; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--muted); padding: 8px 10px; border-bottom: 2px solid var(--green); }
+  .arc-table td { padding: 12px 10px; border-bottom: 1px solid var(--border); font-size: 0.95rem; vertical-align: top; }
+  .arc-table .dn { font-weight: 700; color: var(--terra); width: 46px; }
+  .arc-table .dd { color: var(--muted); font-style: italic; width: 90px; }
+  .arc-table strong { color: var(--green); }
+
+  /* === FOOD === */
+  .food-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 2rem; }
+  .food-grid img { width: 100%; height: 280px; object-fit: cover; border-radius: 6px; }
+  @media (max-width: 768px) { .food-grid { grid-template-columns: 1fr; } }
+
+  /* === ROOMS === */
+  .rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 2rem;
+  }
+  .room-card { text-align: center; }
+  .room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+  }
+  .room-info {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 16px 14px;
+  }
+  .room-info .room-name {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .room-info .room-price {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    color: var(--green);
+    font-weight: 600;
+  }
+  .room-info .room-price .cur { font-size: 0.8rem; }
+  .room-info .room-detail { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+  @media (max-width: 900px) { .rooms-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .rooms-grid { grid-template-columns: 1fr; } .room-card img { height: 220px; } }
+
+  /* === QUALIFYING: WHO THIS IS FOR === */
+  .qual-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 2rem; }
+  .qual-col h3 { font-family: Georgia, serif; margin-bottom: 14px; font-size: 1.1rem; }
+  .qual-col ul { list-style: none; padding: 0; }
+  .qual-col li { padding: 9px 0 9px 20px; position: relative; font-size: 0.95rem; border-bottom: 1px solid var(--border); }
+  .qual-col li::before { content: ''; position: absolute; left: 0; top: 17px; width: 8px; height: 1.5px; }
+  .qual-yes li::before { background: var(--green); }
+  .qual-no li::before { background: var(--terra); }
+  @media (max-width: 768px) { .qual-grid { grid-template-columns: 1fr; } }
+
+  /* === LOCATION FACTS === */
+  .loc-facts { list-style: none; padding: 0; }
+  .loc-facts li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; display: flex; gap: 12px; }
+  .loc-facts .lbl { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--muted); min-width: 95px; padding-top: 3px; }
+
+  /* === PRICING === */
+  .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 2rem; }
+  .price-card { background: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 28px 20px; text-align: center; position: relative; }
+  .price-card.pop { border-color: var(--terra); box-shadow: 0 4px 20px rgba(196,122,74,0.15); }
+  .price-card.pop::before {
+    content: 'Most popular'; position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
+    background: var(--terra); color: #fff; font-size: 0.65rem; text-transform: uppercase;
+    letter-spacing: 0.15em; padding: 3px 12px; border-radius: 20px; font-weight: 600;
+  }
+  .price-standard {
+    font-size: 1.1rem;
+    color: var(--muted);
+    text-decoration: line-through;
+    margin-bottom: 2px;
+  }
+  .price-badge {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    margin-top: 6px;
+  }
+  .cancel-policy {
+    margin-top: 2.5rem;
+    max-width: 660px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 24px 28px;
+  }
+  .cancel-policy h3 { font-family: Georgia, serif; font-size: 1rem; color: var(--green); margin-bottom: 12px; }
+  .cancel-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+  }
+  .cancel-row:last-child { border: none; }
+  .cancel-date { font-weight: 600; color: var(--green); }
+  .cancel-terms { color: var(--text); }
+  .price-type { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--muted); margin-bottom: 10px; }
+  .price-amt { font-family: Georgia, serif; font-size: 2.6rem; color: var(--green); font-weight: 600; line-height: 1; margin-bottom: 2px; }
+  .price-amt .cur { font-size: 1.2rem; vertical-align: super; }
+  .price-per { font-size: 0.82rem; color: var(--muted); }
+  .price-daily { font-size: 0.78rem; color: var(--terra); font-weight: 600; margin-top: 4px; }
+  .price-list { list-style: none; padding: 0; text-align: left; font-size: 0.85rem; margin-top: 16px; border-top: 1px solid var(--border); padding-top: 14px; }
+  .price-list li { padding: 4px 0 4px 16px; position: relative; }
+  .price-list li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 1px; background: var(--terra); }
+  @media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .pricing-grid { grid-template-columns: 1fr; } }
+
+  /* === ANCHOR — value comparison === */
+  .value-box {
+    background: var(--cream-dark);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 28px 32px;
+    margin-top: 2rem;
+    max-width: 660px;
+  }
+  .value-box h3 { font-family: Georgia, serif; font-size: 1rem; margin-bottom: 12px; color: var(--green); }
+  .value-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 0.92rem; border-bottom: 1px solid var(--border); }
+  .value-row:last-child { border: none; font-weight: 700; color: var(--green); padding-top: 10px; }
+  .value-row .vr-price { color: var(--muted); }
+  .value-row:last-child .vr-price { color: var(--terra); font-weight: 700; }
+
+  /* === INCLUDES === */
+  .inc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 2rem; }
+  .inc-col h3 { margin-bottom: 10px; color: var(--green); font-family: Georgia, serif; font-size: 1.05rem; }
+  .inc-col ul { list-style: none; padding: 0; }
+  .inc-col li { padding: 7px 0 7px 16px; position: relative; font-size: 0.92rem; border-bottom: 1px solid var(--border); }
+  .inc-col li::before { content: ''; position: absolute; left: 0; top: 14px; width: 6px; height: 1px; background: var(--terra); }
+  @media (max-width: 768px) { .inc-grid { grid-template-columns: 1fr; } }
+
+  /* === ABOUT === */
+  .about-img { width: 100%; height: 400px; object-fit: cover; object-position: center top; border-radius: 6px; }
+  @media (max-width: 768px) { .about-img { height: 300px; } }
+
+  /* === FAQ === */
+  .faq-list { margin-top: 2rem; max-width: 720px; }
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-q {
+    display: block; width: 100%; text-align: left; background: none; border: none;
+    padding: 18px 0; font-size: 1.05rem; font-family: Georgia, serif; font-weight: 600;
+    color: var(--green); cursor: pointer; position: relative; padding-right: 30px;
+  }
+  .faq-q::after { content: '+'; position: absolute; right: 0; top: 18px; font-size: 1.2rem; color: var(--terra); font-family: sans-serif; transition: transform 0.2s; }
+  .faq-q.open::after { content: '−'; }
+  .faq-a { padding: 0 0 18px; font-size: 0.95rem; color: #2b332e; display: none; line-height: 1.6; }
+  .faq-a.open { display: block; }
+
+  /* === BOOKING FORM === */
+  .booking-box {
+    max-width: 560px; margin: 2rem auto 0;
+    background: #fff; border: 1px solid var(--border);
+    border-radius: 6px; padding: 36px 32px;
+  }
+  .booking-box .trust {
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .booking-box .trust strong { color: var(--green); }
+  .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+  .f-row.full { grid-template-columns: 1fr; }
+  .f-field label { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--muted); margin-bottom: 5px; font-weight: 600; }
+  .f-field input, .f-field select {
+    width: 100%; padding: 12px 14px; border: 1px solid var(--border);
+    border-radius: 4px; font-size: 1rem; font-family: inherit;
+    background: var(--cream); color: var(--text);
+  }
+  .f-field input:focus, .f-field select:focus { outline: none; border-color: var(--terra); }
+  .f-submit { margin-top: 18px; text-align: center; }
+  .f-submit .cta { width: 100%; }
+  @media (max-width: 520px) { .f-row { grid-template-columns: 1fr; } }
+
+  /* === URGENCY BAR === */
+  .urgency {
+    background: var(--green); color: var(--cream); text-align: center;
+    padding: 14px 24px; font-size: 0.88rem;
+  }
+  .urgency strong { color: var(--terra); }
+
+  /* === STICKY MOBILE CTA === */
+  .mobile-cta {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 99;
+    background: rgba(31,58,46,0.97); padding: 12px 20px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+  }
+  .mobile-cta .cta { width: 100%; padding: 14px; font-size: 0.95rem; }
+  .mobile-cta .spots-note { font-size: 0.72rem; color: var(--terra); margin-top: 4px; }
+  @media (max-width: 768px) { .mobile-cta.visible { display: block; } section:last-of-type { padding-bottom: 120px; } }
+
+  /* === DISCLAIMER + FOOTER === */
+  .disclaimer { padding: 28px 0; background: var(--cream); border-top: 1px solid var(--border); }
+  .disclaimer p { font-size: 0.78rem; color: var(--muted); max-width: 680px; margin: 0 auto; text-align: center; }
+  footer { background: var(--green); color: #a8b4ac; padding: 36px 24px; text-align: center; font-size: 0.82rem; line-height: 1.8; }
+  footer strong { color: #fff; } footer a { color: var(--terra); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- URGENCY BAR -->
+<div class="urgency">
+  First edition — <strong>limited to 15 spots</strong> · Early bird pricing until May 15 · June 14–20, 2026
+</div>
+
+<!-- STICKY NAV -->
+<nav class="topbar" id="topbar">
+  <a href="#" class="brand">Longevity Blueprint</a>
+  <span class="spots">Limited spots</span>
+  <a href="#booking" class="cta">Reserve your spot</a>
+</nav>
+
+<!-- STICKY MOBILE CTA -->
+<div class="mobile-cta" id="mobileCta">
+  <a href="#booking" class="cta">Reserve your spot</a>
+  <div class="spots-note">No payment required — limited to 15 guests</div>
+</div>
+
+<!-- ============================================ -->
+<!-- HERO — Full-screen bg + L3 content overlay -->
+<!-- ============================================ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Longevity Blueprint Mountain Retreat</div>
+    <h1>Leave with a longevity system that actually works.</h1>
+    <p class="sub">Six days in the Italian mountains. Five lectures on root-cause health. Three homemade meals a day. One personal protocol you take home.</p>
+    <ul class="hero-bullets">
+      <li><strong>Learn the system</strong> — stress, sleep, gut, nutrition, hormones, and how they connect</li>
+      <li><strong>Eat the system</strong> — every meal cooked on-site from real, whole ingredients</li>
+      <li><strong>Take the system home</strong> — leave with a personal protocol built through the week</li>
+    </ul>
+    <a href="#booking" class="cta">Reserve your spot</a>
+    <span class="cta-note">No payment required to reserve. Limited to 15 guests.</span>
+    <div class="hero-meta">June 14–20, 2026 &middot; Lago Maggiore, Italy &middot; From &euro;389 all-in</div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- OBJECTION 1: "What makes this different?" — The cascade -->
+<!-- ============================================ -->
+<section class="obj-dark">
+  <div class="container">
+    <div class="eyebrow">Why this retreat is different</div>
+    <h2>Most health advice starts in the wrong place.</h2>
+    <p>"Fix your gut." "Take this supplement." "Cut carbs." None of it works long-term because it skips the upstream. Your body breaks in a specific order:</p>
+    <div class="cascade-chain">
+      <span class="step">Stress</span><span class="arrow">&rarr;</span>
+      <span class="step">Hormones</span><span class="arrow">&rarr;</span>
+      <span class="step">Sleep</span><span class="arrow">&rarr;</span>
+      <span class="step">Gut</span><span class="arrow">&rarr;</span>
+      <span class="step">Metabolism</span><span class="arrow">&rarr;</span>
+      <span class="step">Inflammation</span><span class="arrow">&rarr;</span>
+      <span class="step">Everything else</span>
+    </div>
+    <p>Fix the top of the chain, and the downstream repairs itself. That's the Blueprint. This retreat teaches you the full system — not isolated hacks — so you understand what to do, why it works, and in what order.</p>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- OBJECTION 2: "What will I actually do?" — Pillars -->
+<!-- ============================================ -->
+<section class="obj">
+  <div class="container">
+    <div class="eyebrow">The program</div>
+    <h2>Four pillars. Six days. One system.</h2>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-num">01</div>
+        <div class="pillar-name">Learn</div>
+        <div class="pillar-desc">Five lectures on stress, sleep, gut, nutrition, movement, and hormones. Two hours each morning, Monday to Friday.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">02</div>
+        <div class="pillar-name">Practice</div>
+        <div class="pillar-desc">Daily breathwork, meditation, stretching. Afternoon workshops. Nature walks on the mountain trails.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">03</div>
+        <div class="pillar-name">Nourish</div>
+        <div class="pillar-desc">Three homemade meals a day, cooked on-site. Real food, all-natural ingredients, zero ultra-processed anything.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">04</div>
+        <div class="pillar-name">Apply</div>
+        <div class="pillar-desc">Leave with your own personal protocol — built through the week, not handed out on the last day.</div>
+      </div>
+    </div>
+    <div class="section-cta">
+      <a href="#booking" class="cta">Reserve your spot</a>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photos">
+  <img src="img/montino/mountain-lake.jpeg" alt="Mountain lake">
+  <img src="img/montino/food-lasagna.jpeg" alt="Homemade food">
+  <img src="img/montino/trail-bridge.jpeg" alt="Mountain trail">
+</div>
+
+<!-- ============================================ -->
+<!-- OBJECTION 2b: "What does a day look like?" — Schedule + Arc -->
+<!-- ============================================ -->
+<section class="obj-alt">
+  <div class="container">
+    <div class="eyebrow">Daily rhythm</div>
+    <h2>A typical day</h2>
+    <div class="sched-grid">
+      <div>
+        <div class="sched-row"><span class="sched-t">07:00</span><span class="sched-d">Breathwork and meditation</span></div>
+        <div class="sched-row"><span class="sched-t">07:30</span><span class="sched-d">Light stretching and mobility</span></div>
+        <div class="sched-row"><span class="sched-t">08:00</span><span class="sched-d">Breakfast (homemade)</span></div>
+        <div class="sched-row"><span class="sched-t">09:30</span><span class="sched-d"><strong>Lecture Block A</strong> (60 min)</span></div>
+        <div class="sched-row"><span class="sched-t">10:30</span><span class="sched-d">Coffee and break</span></div>
+        <div class="sched-row"><span class="sched-t">10:45</span><span class="sched-d"><strong>Lecture Block B</strong> (60 min, Q&amp;A)</span></div>
+      </div>
+      <div>
+        <div class="sched-row"><span class="sched-t">12:30</span><span class="sched-d">Lunch (homemade)</span></div>
+        <div class="sched-row"><span class="sched-t">14:30</span><span class="sched-d">Free time / rest</span></div>
+        <div class="sched-row"><span class="sched-t">17:00</span><span class="sched-d">Workshop or nature walk</span></div>
+        <div class="sched-row"><span class="sched-t">18:30</span><span class="sched-d">Dinner (homemade)</span></div>
+        <div class="sched-row"><span class="sched-t">20:00</span><span class="sched-d">Evening gathering — conversations, music, walks under the stars</span></div>
+        <div class="sched-row"><span class="sched-t">22:30</span><span class="sched-d">Quiet hours</span></div>
+      </div>
+    </div>
+    <p class="sched-note">Sleep is part of the program, not a side effect.</p>
+  </div>
+</section>
+
+<section class="obj">
+  <div class="container">
+    <div class="eyebrow">The week</div>
+    <h2>The 6-day arc</h2>
+    <table class="arc-table">
+      <thead><tr><th>Day</th><th></th><th>Theme</th></tr></thead>
+      <tbody>
+        <tr><td class="dn">1</td><td class="dd">Sunday</td><td>Arrival, welcome dinner — no lecture, just settling in</td></tr>
+        <tr><td class="dn">2</td><td class="dd">Monday</td><td><strong>Lecture 1</strong> — Stress, the nervous system, and the cortisol connection</td></tr>
+        <tr><td class="dn">3</td><td class="dd">Tuesday</td><td><strong>Lecture 2</strong> — Sleep and circadian rhythm</td></tr>
+        <tr><td class="dn">4</td><td class="dd">Wednesday</td><td><strong>Lecture 3</strong> — Gut health and the immune system</td></tr>
+        <tr><td class="dn">5</td><td class="dd">Thursday</td><td><strong>Lecture 4</strong> — Nutrition and metabolism</td></tr>
+        <tr><td class="dn">6</td><td class="dd">Friday</td><td><strong>Lecture 5</strong> — Movement, energy, and the personal protocol wrap-up</td></tr>
+        <tr><td class="dn">&mdash;</td><td class="dd">Saturday</td><td>Departure morning</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- OBJECTION 3: "Is the food real?" -->
+<!-- ============================================ -->
+<section class="obj-dark">
+  <div class="container">
+    <div class="eyebrow">Nourishment</div>
+    <h2>Real food. Every meal. No exceptions.</h2>
+    <p>Three meals a day, cooked on-site by the founder. Not "diet food." Not a "healthy menu." Just real homemade food — all-natural ingredients, zero ultra-processed items. No seed oils, no sugary cereals, no instant anything.</p>
+    <p>This is part of the teaching. You don't just hear about good nutrition — you eat it for the whole week.</p>
+    <div class="food-grid">
+      <img src="img/montino/food-salad.jpeg" alt="Fresh grain and vegetable salad">
+      <img src="img/montino/food-pasta.jpeg" alt="Homemade pasta">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- OBJECTION 4: "Where is this? How do I get there?" -->
+<!-- ============================================ -->
+<section class="obj">
+  <div class="container">
+    <div class="eyebrow">The setting</div>
+    <h2>Lago Maggiore, Italian Alps</h2>
+    <div class="two-col">
+      <img src="img/montino/lago-panorama.jpeg" alt="Lago Maggiore panorama">
+      <div>
+        <p>The retreat takes place at a mountain coliving space near Verbania, on the shores of Lago Maggiore. Green slopes, clean air, quiet trails — nature itself is part of the program.</p>
+        <ul class="loc-facts">
+          <li><span class="lbl">Where</span><span>Near Verbania, Lago Maggiore, Northern Italy</span></li>
+          <li><span class="lbl">Airports</span><span>Milan Malpensa (MXP) &middot; Milan Bergamo (BGY)</span></li>
+          <li><span class="lbl">Transfer</span><span>Pickup from Verbania bus/train station included</span></li>
+          <li><span class="lbl">Dates</span><span>June 14 (Sun) &ndash; June 20 (Sat), 2026</span></li>
+          <li><span class="lbl">Group</span><span>12&ndash;15 guests maximum</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- OBJECTION 5: "Is this for me?" — Qualifying -->
+<!-- ============================================ -->
+<section class="obj-alt">
+  <div class="container">
+    <div class="eyebrow">Is this for you?</div>
+    <h2>Who this retreat is for — and who it isn't.</h2>
+    <div class="qual-grid">
+      <div class="qual-col qual-yes">
+        <h3>This is for you if:</h3>
+        <ul>
+          <li>You're 30–50 and already curious about longevity, sleep, nutrition, or gut health</li>
+          <li>You're overwhelmed by conflicting health information and want one coherent system</li>
+          <li>You suspect your issues have root causes that no one is addressing</li>
+          <li>You want structured education, not just a week of relaxation</li>
+          <li>You're ready to make real changes and want the tools to do it</li>
+        </ul>
+      </div>
+      <div class="qual-col qual-no">
+        <h3>This is not for you if:</h3>
+        <ul>
+          <li>You want a passive spa vacation with no learning</li>
+          <li>You're looking for medical treatment or diagnosis</li>
+          <li>You want someone to hand you a pill and fix everything</li>
+          <li>You're not open to changing daily habits</li>
+          <li>You need luxury hotel amenities — this is a mountain coliving, not a resort</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-cta">
+      <a href="#booking" class="cta">Reserve your spot</a>
+      <span class="cta-note">No payment required. Only 12 places available.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- OBJECTION 5b: "What are the rooms like?" -->
+<!-- ============================================ -->
+<section class="obj">
+  <div class="container">
+    <div class="eyebrow">Accommodation</div>
+    <h2>Simple, comfortable, surrounded by nature.</h2>
+    <p style="color: var(--muted); margin-bottom: 0;">Warm wood floors, natural light, mountain views. Not a luxury resort — a real mountain home where you sleep well and wake up ready to learn.</p>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <img src="img/rooms/dorm.jpg" alt="Dorm room">
+        <div class="room-info">
+          <div class="room-name">Dorm bed</div>
+          <div class="room-price"><span class="cur">&euro;</span>389</div>
+          <div class="room-detail">Early bird &middot; <s>&euro;419</s> after May 15</div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="img/rooms/single.jpg" alt="Single room">
+        <div class="room-info">
+          <div class="room-name">Single room</div>
+          <div class="room-price"><span class="cur">&euro;</span>489</div>
+          <div class="room-detail">Early bird &middot; <s>&euro;519</s> after May 15</div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="img/rooms/double-shared.jpg" alt="Double room shared bathroom">
+        <div class="room-info">
+          <div class="room-name">Double shared bath</div>
+          <div class="room-price"><span class="cur">&euro;</span>519</div>
+          <div class="room-detail">Early bird &middot; <s>&euro;548</s> after May 15</div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="img/rooms/double-ensuite.jpg" alt="Double room with ensuite bathroom">
+        <div class="room-info">
+          <div class="room-name">Double ensuite</div>
+          <div class="room-price"><span class="cur">&euro;</span>589</div>
+          <div class="room-detail">Early bird &middot; <s>&euro;619</s> after May 15</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- OBJECTION 6: "How much? Is it worth it?" — Pricing -->
+<!-- ============================================ -->
+<section class="obj-alt" id="pricing">
+  <div class="container">
+    <div class="eyebrow">Investment</div>
+    <h2>All-inclusive pricing. No hidden costs.</h2>
+    <p style="color: var(--muted);">Every tier includes the full program: 5 lectures, 3 meals/day, workshops, nature walks, morning practice, workbook, personal protocol, and station pickup.</p>
+    <p style="color: var(--terra); font-weight: 600; font-size: 0.9rem; margin-top: 1rem;">Early bird pricing — book before May 15 and save &euro;20.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-type">Dorm bed</div>
+        <div class="price-standard">&euro;419</div>
+        <div class="price-amt"><span class="cur">&euro;</span>389</div>
+        <div class="price-per">per person / 6 nights</div>
+        <div class="price-daily">&euro;65/day all-in</div>
+        <div class="price-badge">Early bird — before May 15</div>
+        <ul class="price-list">
+          <li>Shared dorm room</li>
+          <li>Full program</li>
+          <li>3 meals/day</li>
+          <li>Station pickup</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <div class="price-type">Single room</div>
+        <div class="price-standard">&euro;519</div>
+        <div class="price-amt"><span class="cur">&euro;</span>489</div>
+        <div class="price-per">per person / 6 nights</div>
+        <div class="price-daily">&euro;82/day all-in</div>
+        <div class="price-badge">Early bird — before May 15</div>
+        <ul class="price-list">
+          <li>Private single room</li>
+          <li>Full program</li>
+          <li>3 meals/day</li>
+          <li>Station pickup</li>
+        </ul>
+      </div>
+      <div class="price-card pop">
+        <div class="price-type">Double shared bath</div>
+        <div class="price-standard">&euro;548</div>
+        <div class="price-amt"><span class="cur">&euro;</span>519</div>
+        <div class="price-per">per person / 6 nights</div>
+        <div class="price-daily">&euro;87/day all-in</div>
+        <div class="price-badge">Early bird — before May 15</div>
+        <ul class="price-list">
+          <li>Double room, shared bathroom</li>
+          <li>Full program</li>
+          <li>3 meals/day</li>
+          <li>Station pickup</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <div class="price-type">Double ensuite</div>
+        <div class="price-standard">&euro;619</div>
+        <div class="price-amt"><span class="cur">&euro;</span>589</div>
+        <div class="price-per">per person / 6 nights</div>
+        <div class="price-daily">&euro;98/day all-in</div>
+        <div class="price-badge">Early bird — before May 15</div>
+        <ul class="price-list">
+          <li>Double room, private bathroom</li>
+          <li>Full program</li>
+          <li>3 meals/day</li>
+          <li>Station pickup</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- VALUE ANCHOR -->
+    <div class="value-box">
+      <h3>What this would cost separately</h3>
+      <div class="value-row"><span>6 nights mountain accommodation</span><span class="vr-price">&euro;220–420</span></div>
+      <div class="value-row"><span>18 meals (3/day &times; 6 days)</span><span class="vr-price">&euro;250–400</span></div>
+      <div class="value-row"><span>5 specialist workshops / lectures</span><span class="vr-price">&euro;300–500</span></div>
+      <div class="value-row"><span>Personal health protocol consultation</span><span class="vr-price">&euro;150–300</span></div>
+      <div class="value-row"><span>Daily guided practice + nature walks</span><span class="vr-price">&euro;100–200</span></div>
+      <div class="value-row"><span><strong>Total if booked separately</strong></span><span class="vr-price"><strong>&euro;1,020–1,820</strong></span></div>
+    </div>
+
+    <!-- PAYMENT & CANCELLATION -->
+    <div class="cancel-policy">
+      <h3>Payment and cancellation</h3>
+      <div class="cancel-row">
+        <span class="cancel-date">Now</span>
+        <span class="cancel-terms">Reserve your spot — no payment required</span>
+      </div>
+      <div class="cancel-row">
+        <span class="cancel-date">Before May 15</span>
+        <span class="cancel-terms">Early bird pricing locked in for confirmed bookings</span>
+      </div>
+      <div class="cancel-row">
+        <span class="cancel-date">May 21</span>
+        <span class="cancel-terms">Full payment due. Free cancellation up to this date.</span>
+      </div>
+      <div class="cancel-row">
+        <span class="cancel-date">May 22 – June 1</span>
+        <span class="cancel-terms">Cancellation possible — 50% refund</span>
+      </div>
+      <div class="cancel-row">
+        <span class="cancel-date">After June 1</span>
+        <span class="cancel-terms">No refund — but you can transfer your spot to someone else</span>
+      </div>
+    </div>
+
+    <!-- INCLUDES -->
+    <div class="inc-grid" style="margin-top: 2.5rem;">
+      <div class="inc-col">
+        <h3>Included in every tier</h3>
+        <ul>
+          <li>6 nights accommodation</li>
+          <li>3 homemade meals per day</li>
+          <li>5 morning lectures (2 hours each)</li>
+          <li>Afternoon workshops</li>
+          <li>Daily breathwork, meditation, stretching</li>
+          <li>Nature walks</li>
+          <li>Workbook and personal protocol</li>
+          <li>Pickup from Verbania station</li>
+        </ul>
+      </div>
+      <div class="inc-col">
+        <h3>Not included</h3>
+        <ul>
+          <li>Flights to Milan (Malpensa or Bergamo)</li>
+          <li>Airport &rarr; Verbania transfer (train/bus available)</li>
+          <li>Travel insurance</li>
+          <li>Personal supplements or medications</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-cta">
+      <a href="#booking" class="cta">Reserve your spot</a>
+      <span class="cta-note">No payment required to reserve.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- OBJECTION 7: "Who's behind this?" — Founder -->
+<!-- ============================================ -->
+<section class="obj-dark">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="eyebrow">Your host</div>
+        <h2>Built by someone who needed it first.</h2>
+        <p>I'm Anton. I spent eight years trying to fix my health while doctors shrugged. Gut issues, brain fog, fatigue — and eventually a thyroid condition that had been quietly running the show the whole time.</p>
+        <p>No one gave me a system. So I built one.</p>
+        <p>My background is in finance, business, and AI. I think in frameworks, not feelings. Over years of reading longevity science and testing it on myself, I developed a root-cause approach that actually moved the needle.</p>
+        <p>This retreat is what I wish someone had offered me eight years ago.</p>
+      </div>
+      <img src="img/montino/anton.jpeg" alt="Anton Antonov" class="about-img">
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photos">
+  <img src="img/montino/lago-town.jpeg" alt="Lago Maggiore">
+  <img src="img/montino/grounds.jpeg" alt="Mountain grounds">
+  <img src="img/montino/lake-trees.jpeg" alt="Lake through trees">
+</div>
+
+<!-- ============================================ -->
+<!-- OBJECTION 8: "I have questions" — FAQ -->
+<!-- ============================================ -->
+<section class="obj-alt">
+  <div class="container">
+    <div class="eyebrow">Questions</div>
+    <h2>Frequently asked</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">Do I need any prior health knowledge to attend?</button>
+        <div class="faq-a">No. The lectures are designed to be accessible to anyone curious about their health. You don't need a science background — just a willingness to learn and apply.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">I have dietary restrictions. Can the meals accommodate me?</button>
+        <div class="faq-a">Yes. All meals are cooked on-site by the founder, so we can adapt to allergies, intolerances, and preferences. Just mention it in the booking form and we'll work it out before you arrive.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How do I get from the airport to the retreat?</button>
+        <div class="faq-a">Fly into Milan Malpensa (MXP) or Milan Bergamo (BGY). From there, take a direct train or bus to Verbania — about 1.5 hours. We pick you up from Verbania bus/train station. We'll send detailed travel instructions after booking.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is this a medical program? Will I receive diagnosis or treatment?</button>
+        <div class="faq-a">No. This is an educational retreat. Anton is not a doctor and does not diagnose or treat conditions. You'll learn a framework for understanding your health and leave with a personal action plan — but any medical decisions should be discussed with your healthcare provider.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What's the accommodation like?</button>
+        <div class="faq-a">It's a mountain coliving space — comfortable, clean, and surrounded by nature. It is not a luxury resort. Think warm wood, simple rooms, communal spaces, and a focus on the experience rather than the thread count. There are four room tiers from dorm beds to private ensuite doubles.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I come alone?</button>
+        <div class="faq-a">Absolutely. Most guests come solo. The small group size (12–15) means you'll get to know everyone quickly. The atmosphere is collaborative, not cliquey.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What if I reserve and then can't make it?</button>
+        <div class="faq-a">Reserving your spot is free — no payment required. Full payment is due by May 21. You can cancel for free up to that date. Between May 22 and June 1, cancellation is possible with a 50% refund. After June 1, no refund — but you can transfer your spot to someone else.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is this the first time this retreat is running?</button>
+        <div class="faq-a">Yes — June 2026 is the first edition. That means a smaller group, more personal attention, and the chance to shape something from the beginning. It also means an accessible price point that won't last at this level.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- FINAL CTA — BOOKING FORM -->
+<!-- ============================================ -->
+<section class="obj" id="booking">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+      <div class="eyebrow">Reserve your spot</div>
+      <h2>Join the first edition.</h2>
+    </div>
+    <div class="booking-box">
+      <div class="trust">
+        <strong>No payment required.</strong> This reserves your place. Payment details are shared once your spot is confirmed. Group limited to 15 guests.
+      </div>
+      <form action="#" method="POST">
+        <div class="f-row">
+          <div class="f-field">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" required>
+          </div>
+          <div class="f-field">
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" required>
+          </div>
+        </div>
+        <div class="f-row full">
+          <div class="f-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="f-row full">
+          <div class="f-field">
+            <label for="room">Preferred room type</label>
+            <select id="room" name="room" required>
+              <option value="">Select a tier</option>
+              <option value="dorm">Dorm bed — &euro;389 (early bird) / &euro;419</option>
+              <option value="single">Single room — &euro;489 (early bird) / &euro;519</option>
+              <option value="double-shared">Double shared bath — &euro;519 (early bird) / &euro;548</option>
+              <option value="double-ensuite">Double ensuite — &euro;589 (early bird) / &euro;619</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-submit">
+          <button type="submit" class="cta">Reserve my spot</button>
+          <span class="cta-note">You'll receive a confirmation email within 24 hours.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <div class="container">
+    <p>The content presented at this retreat is for educational and informational purposes only and is not intended as medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional before making changes to your diet, lifestyle, or supplement routine. Anton Antonov is not a licensed medical practitioner.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <strong>Longevity Blueprint</strong><br>
+    Built by Anton Antonov<br>
+    <a href="https://x.com/Antonoff_A">@Antonoff_A</a> &middot;
+    <a href="https://longevityblueprint.me">longevityblueprint.me</a><br><br>
+    &copy; 2026 Longevity Blueprint. All rights reserved.
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+  // Sticky nav
+  const topbar = document.getElementById('topbar');
+  const mobileCta = document.getElementById('mobileCta');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    topbar.classList.toggle('visible', y > 500);
+    mobileCta.classList.toggle('visible', y > 500);
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = answer.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+      // Toggle clicked
+      if (!isOpen) {
+        answer.classList.add('open');
+        btn.classList.add('open');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
