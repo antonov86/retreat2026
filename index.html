@@ -320,7 +320,7 @@ src="https://www.facebook.com/tr?id=1336332018551257&ev=PageView&noscript=1"
 
   /* === PRICING === */
   .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 2rem; }
-  .price-card { background: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 28px 20px; text-align: center; position: relative; }
+  .price-card { background: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 28px 20px; text-align: center; position: relative; display: flex; flex-direction: column; }
   .price-card.pop { border-color: var(--terra); box-shadow: 0 4px 20px rgba(196,122,74,0.15); }
   .price-card.pop::before {
     content: 'Most popular'; position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
@@ -373,9 +373,10 @@ src="https://www.facebook.com/tr?id=1336332018551257&ev=PageView&noscript=1"
   .price-list { list-style: none; padding: 0; text-align: left; font-size: 0.85rem; margin-top: 16px; border-top: 1px solid var(--border); padding-top: 14px; }
   .price-list li { padding: 4px 0 4px 16px; position: relative; }
   .price-list li::before { content: ''; position: absolute; left: 0; top: 11px; width: 6px; height: 1px; background: var(--terra); }
+  .price-list { flex: 1; }
   .price-cta {
     display: block;
-    margin-top: 16px;
+    margin-top: auto;
     padding: 12px 0;
     text-align: center;
     background: var(--terra);
